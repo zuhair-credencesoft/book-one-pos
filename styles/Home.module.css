@@ -3,6 +3,7 @@
   justify-content: space-between;
   max-width: 1500px;
   margin: auto;
+  height: 80vh;
 }
 
 .leftSection {
@@ -89,6 +90,7 @@
 
 .signUpContainer > .signUpImg {
   margin: auto;
+  margin-right: 80px;
   width: 60%;
   padding: 20px 10px;
   /* height: 100px; */
@@ -136,6 +138,8 @@
 .bottomGradient {
   position: absolute;
   top: 350px;
+  z-index: -1;
+  width: 20%;
 }
 
 @media screen and (max-width: 1300px) {
@@ -167,6 +171,6 @@
   .signUpContainer > .signUpImg {
     width: 40%;
     padding: 20px 0px;
-    /* height: 100px; */
+    margin: auto;
   }
 }
