@@ -107,11 +107,11 @@
 }
 
 .whyHeading {
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .tabContainer {
-  width: 70%;
+  width: 80%;
   border-radius: 15px;
   background-color: rgb(221, 221, 221);
 }
@@ -124,10 +124,11 @@
 }
 
 .whyOrderList {
-  height: 28px;
-  padding: 2px 20px;
+  height: 35px;
+  padding: 5px 20px;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 15px;
   /* color: white;
   background-color: black; */
   /* width: 120px; */
