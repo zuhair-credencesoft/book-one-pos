@@ -94,7 +94,7 @@ export default function Home() {
               First
               <span
                 className={styles.gradientText}
-                style={{ marginLeft: "15px" }}
+                style={{ marginLeft: "15px", marginRight: "15px" }}
               >
                 mobile
               </span>{" "}
@@ -108,8 +108,7 @@ export default function Home() {
             <button className={styles.heroTextButton}>Take a Free demo</button>
           </div>
           <div className={styles.polygon}>
-            <img className={styles.polygonLine} src="/Vector-954.jpg"></img>
-            <img className={styles.polygonArrow} src="/Polygon-1.jpg"></img>
+            <img className={styles.polygonArrow} src="/heroArrow.svg"></img>
           </div>
         </div>
         <div className={styles.signUpContainer}>
@@ -197,6 +196,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <img className={styles.bottomGradient} src="/Ellipse-137.svg" alt="" />
     </div>
   );
 }
