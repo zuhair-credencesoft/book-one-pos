@@ -86,6 +86,7 @@
 
 .signUpContainer > .signUpImg {
   margin: auto;
+  margin-right: 80px;
   width: 60%;
   padding: 20px 10px;
   /* height: 100px; */
@@ -129,6 +130,6 @@
   .signUpContainer > .signUpImg {
     width: 40%;
     padding: 20px 0px;
-    /* height: 100px; */
+    margin: auto;
   }
 }
