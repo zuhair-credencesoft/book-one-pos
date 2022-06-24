@@ -1,0 +1,42 @@
+.whyBookOnePosContainer{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+    padding-bottom: 80px;
+}
+
+.whyBookOnePosLeftSection > h1{
+    font-size: 60px;
+    color: #259BBF;
+    margin: 0;
+}
+
+.whyBookOnePosLeftSection{    
+    display: flex;
+    padding: 20px 20px;
+}
+
+.whyBookOnePosDesc > h2 {
+    font-weight: 600;
+    font-size: 25px;
+    padding-left: 16px;
+}
+.whyBookOnePosDesc > h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.whyBookOnePosDesc{    
+    padding: 10px 30px;
+}
+
+.whyBookOnePosRightSection{
+
+}
+
+.whyBookOnePosRightSection > img {
+    width: 100%;
+    max-width: 300px;
+}
