@@ -3,6 +3,7 @@
   justify-content: space-between;
   max-width: 1500px;
   margin: auto;
+  height: 80vh;
 }
 
 .leftSection {
@@ -136,6 +137,8 @@
 .bottomGradient {
   position: absolute;
   top: 350px;
+  z-index: -1;
+  width: 20%;
 }
 
 @media screen and (max-width: 1300px) {
