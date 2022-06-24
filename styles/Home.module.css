@@ -1,4 +1,4 @@
-.heroContainer{
+.heroContainer {
   display: flex;
   justify-content: space-between;
   max-width: 1500px;
@@ -10,7 +10,6 @@
   display: flex;
   position: relative;
 }
-
 
 .polygon {
   position: absolute;
@@ -29,8 +28,7 @@
   min-width: 200px;
 }
 
-
-.heroText{
+.heroText {
   width: 80%;
   padding: 50px 0px;
   display: flex;
@@ -38,8 +36,8 @@
   /* background-color: aqua; */
 }
 
-.heroText > .Text1{
-  font-family: 'DM Sans';
+.heroText > .Text1 {
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 70px;
@@ -56,15 +54,20 @@
   color: #000000;
 }
 
-.Text2{
+.Text2 {
   text-align: center;
   padding: 0px 50px;
 }
 
-.gradientText{
+.gradientText {
   /* color: transparent;
   background: linear-gradient(90.71deg, #1D174D 44.71%, #259BBF 73.75%, #E5E5E5 104.67%); */
-  background: -webkit-linear-gradient(0deg, #1D174D 44.71%, #259BBF 73.75%, #E5E5E5 104.67%);
+  background: -webkit-linear-gradient(
+    0deg,
+    #1d174d 44.71%,
+    #259bbf 73.75%,
+    #e5e5e5 104.67%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -77,7 +80,7 @@
   font-size: 15px;
   border-radius: 15px;
   border: 0px;
-  background: #259BBF;
+  background: #259bbf;
   color: #ffff;
 }
 
@@ -96,35 +99,69 @@
   width: 100%;
 }
 
-.bottomGradient{
+/* Why bookone Design */
+
+.whyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whyHeading {
+  font-size: 30px;
+}
+
+.tabContainer {
+  width: 70%;
+  border-radius: 15px;
+  background-color: rgb(221, 221, 221);
+}
+
+.whyUnorderedList {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  /* gap: 98px; */
+}
+
+.whyOrderList {
+  height: 28px;
+  padding: 2px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  /* color: white;
+  background-color: black; */
+  /* width: 120px; */
+}
+.bottomGradient {
   position: absolute;
   top: 350px;
 }
 
 @media screen and (max-width: 1300px) {
-  .heroContainer{
+  .heroContainer {
     flex-direction: column;
   }
-  .leftSection{
+  .leftSection {
     width: 100%;
     justify-content: center;
   }
-  
-  .heroText > .Text1{
+
+  .heroText > .Text1 {
     font-weight: 600;
     font-size: 50px;
     line-height: 45px;
-    letter-spacing: 0px
+    letter-spacing: 0px;
   }
-  
-  .Text2{
+
+  .Text2 {
     text-align: center;
     padding: 0px 50px;
   }
-  .polygon{
+  .polygon {
     display: none;
   }
-  .bottomGradient{
+  .bottomGradient {
     display: none;
   }
   .signUpContainer > .signUpImg {
