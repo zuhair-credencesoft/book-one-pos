@@ -3,8 +3,17 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import LeftRestaurantImage from "../components/LeftRestaurantImage";
+import WhyBookOnePos from "../components/WhyBookOnePos";
 
 export default function Home() {
+  const [whyBookOnePos, setWhyBookOnePos] = useState({
+    number: "01",
+    description: {
+      h2: "Orders - Once and Done",
+      h3: "Sending all orders directly to your POS to reduce double handling and mistakes.",
+    },
+    img: "/Fast-Food.jpg",
+  });
   const [easy, setEasy] = useState(true);
   const [automation, setAutomation] = useState(false);
   const [one, setOne] = useState(false);
@@ -60,6 +69,14 @@ export default function Home() {
     setEfficient(false);
     setIntegration(false);
     setBottom(false);
+    setWhyBookOnePos({
+      number: "01",
+      description: {
+        h2: "Orders - Once and Done",
+        h3: "Sending all orders directly to your POS to reduce double handling and mistakes.",
+      },
+      img: "/Fast-Food.jpg",
+    });
   };
   const automationClick = () => {
     setAutomation(!automation);
@@ -69,6 +86,14 @@ export default function Home() {
     setEfficient(false);
     setIntegration(false);
     setBottom(false);
+    setWhyBookOnePos({
+      number: "02",
+      description: {
+        h2: "Pass. Plate. Pronto",
+        h3: "Automatically send tickets to the kitchen and serve customers faster.",
+      },
+      img: "/Business-Strategy.jpg",
+    });
   };
 
   const oneClick = () => {
@@ -79,6 +104,14 @@ export default function Home() {
     setEfficient(false);
     setIntegration(false);
     setBottom(false);
+    setWhyBookOnePos({
+      number: "03",
+      description: {
+        h2: "A counter as clean as your kitchen",
+        h3: "Reduce clutter with one central management system to manage all your business.",
+      },
+      img: "/Financing-Strategy.jpg",
+    });
   };
 
   const customerClick = () => {
@@ -89,6 +122,14 @@ export default function Home() {
     setEfficient(false);
     setIntegration(false);
     setBottom(false);
+    setWhyBookOnePos({
+      number: "04",
+      description: {
+        h2: "Get to know your regulars",
+        h3: "Identify your most loyal customers and understand their tastes and preferences.",
+      },
+      img: "/Destination.jpg",
+    });
   };
 
   const efficientClick = () => {
@@ -99,6 +140,14 @@ export default function Home() {
     setCustomer(false);
     setIntegration(false);
     setBottom(false);
+    setWhyBookOnePos({
+      number: "05",
+      description: {
+        h2: "More Customers, More Efficiency",
+        h3: "Let Customers order and pay from the table and improve revenue per seat.",
+      },
+      img: "/Fast-Food.jpg",
+    });
   };
 
   const integrationClick = () => {
@@ -109,6 +158,14 @@ export default function Home() {
     setCustomer(false);
     setEfficient(false);
     setBottom(false);
+    setWhyBookOnePos({
+      number: "06",
+      description: {
+        h2: "Record of Sales",
+        h3: "Send sales data from your POS to other apps in real time.",
+      },
+      img: "/Doctor.jpg",
+    });
   };
 
   const bottomClick = () => {
@@ -119,6 +176,14 @@ export default function Home() {
     setCustomer(false);
     setEfficient(false);
     setIntegration(false);
+    setWhyBookOnePos({
+      number: "07",
+      description: {
+        h2: "Bottoms Up!",
+        h3: "Create efficiencies across your entire business and improve your bottom line.",
+      },
+      img: "/Doctor.jpg",
+    });
   };
 
   return (
@@ -259,6 +324,11 @@ export default function Home() {
             );
           })}
         </div>
+        <WhyBookOnePos
+          number={whyBookOnePos.number}
+          description={whyBookOnePos.description}
+          img={whyBookOnePos.img}
+        />
       </div>
 
       <img className={styles.bottomGradient} src="/Ellipse-137.svg" alt="" />
