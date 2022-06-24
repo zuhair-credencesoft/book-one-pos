@@ -1,6 +1,8 @@
+import RightRestaurantImage from "../components/RightRestaurantImage";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { useState } from "react";
+import LeftRestaurantImage from "../components/LeftRestaurantImage";
 
 export default function Home() {
   const [easy, setEasy] = useState(true);
@@ -10,6 +12,45 @@ export default function Home() {
   const [efficient, setEfficient] = useState(false);
   const [integration, setIntegration] = useState(false);
   const [bottom, setBottom] = useState(false);
+
+  const leftRightImgData = [
+    {
+      left: {
+        heading: "Qracle",
+        desc: "A QR scanner that enables guests to order meals from their table without having to call or wait for the waiter to deliver the menu card.",
+        img: "/oracle.jpg",
+      },
+      right: {
+        heading: "Report Generation",
+        desc: "Our POS is capable of giving you insights into what is best for you. Such reports help you make better merchandising and pricing decisions in the future.",
+        img: "/report.png",
+      },
+    },
+    {
+      left: {
+        heading: "KOT (Kitchen ordering ticket)",
+        desc: "Reducing the risk due to manual mistakes, KOT saves time plus it greatly helps the management to have real-time reporting of all the orders that are placed at your restaurant.",
+        img: "/kot.png",
+      },
+      right: {
+        heading: "Complete Order Management",
+        desc: "Sale Order Management Payment Managemen Expense Management Invoice Management.",
+        img: "/management.png",
+      },
+    },
+    {
+      left: {
+        heading: "Inventory management",
+        desc: " Inventory management, at its very essence, keeps track of all products so you know when it’s time to order/or not order specific products.",
+        img: "/kot.png",
+      },
+      right: {
+        heading: "Complete Order Management",
+        desc: "Sale Order Management Payment Managemen Expense Management Invoice Management.",
+        img: "/management.png",
+      },
+    },
+  ];
 
   const easyClick = () => {
     setEasy(!easy);
@@ -195,8 +236,31 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        
+        <div className={styles.trustedRestContainer}>
+          <h6>
+            Trusted by <span>500+</span> Restaurants Partners
+          </h6>
+          {leftRightImgData.map((val, i) => {
+            return (
+              <>
+                <div key={i}>
+                  <LeftRestaurantImage
+                    heading={val.left.heading}
+                    desc={val.left.desc}
+                    img={val.left.img}
+                  />
+                  <RightRestaurantImage
+                    heading={val.right.heading}
+                    desc={val.right.desc}
+                    img={val.right.img}
+                  />
+                </div>
+              </>
+            );
+          })}
+        </div>
       </div>
+
       <img className={styles.bottomGradient} src="/Ellipse-137.svg" alt="" />
     </div>
   );

@@ -1,0 +1,59 @@
+.bigContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  height: 60vh;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin: auto; */
+  max-width: 1500px;
+  width: 80%;
+  /* padding: 2px ppx; */
+  /* gap: 600px; */
+}
+
+.nextImage {
+  margin: 0px 50px;
+}
+
+.blogText > h3 {
+  font-size: 50px;
+}
+
+.blogText > p {
+  font-size: 28px;
+  margin-top: -30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .left > h3 {
+    font-size: 35px;
+  }
+
+  .left > p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .left {
+    text-align: center;
+  }
+}
