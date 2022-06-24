@@ -1,0 +1,100 @@
+.heroContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftSection {
+  width: 50%;
+  display: flex;
+}
+
+/* .polygon {
+  position: absolute;
+  z-index: -1;
+  right: 850px;
+  width: 10%;
+  top: 60px;
+} */
+
+.polygon {
+  width: 13%;
+  margin-top: 70px;
+  position: relative;
+  height: 190px;
+}
+
+.polygon > .polygonLine {
+  height: fit-content;
+  width: 100%;
+} 
+
+.polygon > .polygonArrow {
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+}
+
+.heroText{
+  width: 80%;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+}
+
+.heroText > .Text1{
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 63px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.05em;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  letter-spacing: 2px;
+
+  color: #000000;
+}
+
+.Text2{
+  text-align: center;
+  padding: 0px 50px;
+}
+
+.gradientText{
+  /* color: transparent;
+  background: linear-gradient(90.71deg, #1D174D 44.71%, #259BBF 73.75%, #E5E5E5 104.67%); */
+  background: -webkit-linear-gradient(0deg, #1D174D 44.71%, #259BBF 73.75%, #E5E5E5 104.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroTextButton {
+  display: block;
+  margin: 20px auto;
+  width: 250px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 15px;
+  border: 0px;
+  background: #259BBF;
+  color: #ffff;
+}
+
+.signUpContainer {
+}
+
+.signUpContainer > .signUpImg {
+  margin: auto;
+  width: 80%;
+  padding: 20px 10px;
+  /* height: 100px; */
+}
+
+.signUpContainer > .signUpImg > img {
+  width: 100%;
+}
