@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+.logo {
+  margin-left: 50px;
+  margin-top: 11px;
+  cursor: pointer;
+}
+
+.unorderList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+}
+
+.orderList {
+  list-style: none;
+  font-weight: 600;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.dropOrderList {
+  list-style: none;
+  font-weight: 600;
+  font-size: 28px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.downArrow {
+  padding-top: 8px;
+  height: 30px;
+  width: 30px;
+}
+
+.demoButton {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 50px;
+  width: 180px;
+  border-radius: 6px;
+  margin-right: 50px;
+  background-color: #259bbf;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdownOptions {
+  position: absolute;
+  background-color: white;
+  list-style: none;
+  top: 90px;
+  right: 1190px;
+  width: 160px;
+  height: 200px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.dropdownAddOptions {
+  position: absolute;
+  background-color: white;
+  list-style: none;
+  top: 90px;
+  right: 845px;
+  width: 160px;
+  height: 200px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.dropdownList {
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  right: 17px;
+  margin-bottom: 30px;
+  /* padding: 8px 30px; */
+}
