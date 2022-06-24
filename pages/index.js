@@ -300,6 +300,11 @@ export default function Home() {
               </li>
             </ul>
           </div>
+          <WhyBookOnePos
+          number={whyBookOnePos.number}
+          description={whyBookOnePos.description}
+          img={whyBookOnePos.img}
+        />
         </div>
         <div className={styles.trustedRestContainer}>
           <h6>
@@ -324,11 +329,6 @@ export default function Home() {
             );
           })}
         </div>
-        <WhyBookOnePos
-          number={whyBookOnePos.number}
-          description={whyBookOnePos.description}
-          img={whyBookOnePos.img}
-        />
       </div>
 
       <img className={styles.bottomGradient} src="/Ellipse-137.svg" alt="" />
