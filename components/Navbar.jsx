@@ -1,5 +1,6 @@
 import styles from "../styles/Components/Navbar.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { useState } from "react";
 
@@ -22,8 +23,12 @@ const Navbar = () => {
         <ul className={styles.unorderList}>
           <li className={styles.orderList}>POS</li>
           <li className={styles.orderList}>Integrations</li>
-          <li className={styles.orderList}>Add-Ons</li>
-          <li className={styles.orderList}>About-Us</li>
+          <Link href={"/pricing"}>
+            <li className={styles.orderList}>Pricing</li>
+          </Link>
+          <Link href={"/aboutus"}>
+            <li className={styles.orderList}>About-Us</li>
+          </Link>
         </ul>
       </div>
       <div className={styles.demoButton}>Take a Free demo</div>
