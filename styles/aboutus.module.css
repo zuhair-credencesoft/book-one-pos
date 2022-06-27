@@ -40,7 +40,6 @@
 
 .secondSection > .rightSection > ul>li::marker{
     color: #4C6ED4;
-    size: 20px;
 }
 
 .secondSection > .rightSection > ul>p{
