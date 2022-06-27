@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  margin: auto;
+  max-width: 1400px;
+  justify-content: space-between;
+}
+
+.sectionOne {
+  width: 40%;
+}
+
+.sectionOne > h5 {
+  font-size: 50px;
+}
+
+.sectionOne > p {
+  font-size: 25px;
+  /* width: 500px; */
+}
+
+.sectionOne > ul > li {
+  font-size: 20px;
+}
