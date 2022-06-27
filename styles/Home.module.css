@@ -199,6 +199,7 @@
 @media screen and (max-width: 1300px) {
   .heroContainer {
     flex-direction: column;
+    justify-content: flex-start;
   }
   .leftSection {
     width: 100%;

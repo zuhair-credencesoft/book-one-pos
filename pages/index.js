@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import LeftRestaurantImage from "../components/LeftRestaurantImage";
 import WhyBookOnePos from "../components/WhyBookOnePos";
+import Contact from "../components/Contact";
 
 export default function Home() {
   const [whyBookOnePos, setWhyBookOnePos] = useState({
@@ -351,6 +352,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+        <Contact />
 
       <img className={styles.bottomGradient} src="/Ellipse-137.svg" alt="" />
     </div>
