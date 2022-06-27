@@ -350,8 +350,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <img className={styles.bottomGradient} src="/Ellipse-137.svg" alt="" />
     </div>
   );
 }
