@@ -122,4 +122,10 @@
   .menuIcon {
     display: block;
   }
+.innerUnorder {
+  list-style-type: none;
+}
+.orderList > a {
+  text-decoration: none;
+}
 }
