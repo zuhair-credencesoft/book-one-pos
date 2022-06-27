@@ -1,0 +1,147 @@
+.heroContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: auto;
+  height: 80vh;
+  align-items: center;
+}
+
+.onlineContainer {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.integrationImg > img {
+  height: 400px;
+  width: 1000px;
+}
+
+.leftSection {
+  width: 50%;
+  display: flex;
+  position: relative;
+}
+
+.heroText {
+  width: 80%;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+}
+
+.heroText > .Text1 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 63px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.05em;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  letter-spacing: 2px;
+  margin-top: -20px;
+  color: #000000;
+}
+
+.Text2 {
+  text-align: center;
+  padding: 0px 20px;
+  font-size: 20px;
+  font-family: "DM Sans";
+  margin-top: 20px;
+}
+
+.gradientText {
+  /* color: transparent;
+    background: linear-gradient(90.71deg, #1D174D 44.71%, #259BBF 73.75%, #E5E5E5 104.67%); */
+  background: -webkit-linear-gradient(
+    0deg,
+    #1d174d 44.71%,
+    #259bbf 73.75%,
+    #e5e5e5 104.67%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.signUpContainer > .IntegrationImg {
+  margin: auto;
+  margin-right: 80px;
+  width: 80%;
+  padding: 20px 10px;
+  /* height: 100px; */
+}
+
+.signUpContainer > .IntegrationImg > img {
+  width: 100%;
+}
+
+/* Why bookone Design */
+
+.onlineHeading {
+  font-size: 70px;
+  text-align: center;
+}
+
+.paytmHeading {
+  font-size: 70px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .heroContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .onlineContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .leftSection {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .heroText > .Text1 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 45px;
+    letter-spacing: 0px;
+  }
+
+  .Text2 {
+    text-align: center;
+    padding: 0px 50px;
+  }
+
+  .signUpContainer > .IntegrationImg {
+    width: 40%;
+    padding: 20px 0px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .onlineContainer {
+    max-width: 500px;
+    padding: 10px;
+    margin-top: -5px;
+  }
+  .onlineHeading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .paytmHeading {
+    margin-top: -500px;
+    font-size: 30px;
+    text-align: center;
+  }
+}
