@@ -163,6 +163,42 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* Outlet Type Design */
+
+.outletTypeContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.outletType > h4 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.outletType > p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.outletCards {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+}
+
+.outletCard {
+  margin-right: 25px;
+  margin-bottom: 50px;
+  height: 180px;
+  width: 180px;
+  border-radius: 7px;
+  background-color: #eeeeee;
+}
+
 @media screen and (max-width: 1300px) {
   .heroContainer {
     flex-direction: column;
@@ -195,10 +231,16 @@
     padding: 20px 0px;
     margin: auto;
   }
+  .outletCards {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 720px) {
   .trustedRestContainer {
     font-size: 20px;
+  }
+  .outletCards {
+    flex-wrap: wrap;
   }
 }

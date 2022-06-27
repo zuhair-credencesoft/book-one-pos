@@ -29,35 +29,34 @@ export default function Home() {
         heading: "Qracle",
         desc: "A QR scanner that enables guests to order meals from their table without having to call or wait for the waiter to deliver the menu card.",
         img: "/oracle.jpg",
+        btn: true,
       },
       right: {
-        heading: "Report Generation",
+        heading: "Cross Platform",
         desc: "Our POS is capable of giving you insights into what is best for you. Such reports help you make better merchandising and pricing decisions in the future.",
         img: "/report.png",
       },
     },
     {
       left: {
-        heading: "KOT (Kitchen ordering ticket)",
+        heading: "KOT",
         desc: "Reducing the risk due to manual mistakes, KOT saves time plus it greatly helps the management to have real-time reporting of all the orders that are placed at your restaurant.",
         img: "/kot.png",
+        brackQuote: true,
       },
       right: {
         heading: "Complete Order Management",
-        desc: "Sale Order Management Payment Managemen Expense Management Invoice Management.",
+        desc: false,
         img: "/management.png",
+        btn: true,
+        descOrder: true,
       },
     },
     {
       left: {
-        heading: "Inventory management",
-        desc: " Inventory management, at its very essence, keeps track of all products so you know when it’s time to order/or not order specific products.",
-        img: "/kot.png",
-      },
-      right: {
-        heading: "Complete Order Management",
-        desc: "Sale Order Management Payment Managemen Expense Management Invoice Management.",
-        img: "/management.png",
+        heading: "Report Generation",
+        desc: "Our POS is capable of giving you insights into what is best for you. Such reports help you make better merchandising and pricing decisions in the future..",
+        img: "/report.png",
       },
     },
   ];
@@ -302,10 +301,10 @@ export default function Home() {
             </ul>
           </div>
           <WhyBookOnePos
-          number={whyBookOnePos.number}
-          description={whyBookOnePos.description}
-          img={whyBookOnePos.img}
-        />
+            number={whyBookOnePos.number}
+            description={whyBookOnePos.description}
+            img={whyBookOnePos.img}
+          />
         </div>
         <div className={styles.trustedRestContainer}>
           <h6>
@@ -319,19 +318,41 @@ export default function Home() {
                     heading={val.left.heading}
                     desc={val.left.desc}
                     img={val.left.img}
+                    btn={val.left.btn}
+                    brackQuote={val.left.brackQuote}
                   />
-                  <RightRestaurantImage
-                    heading={val.right.heading}
-                    desc={val.right.desc}
-                    img={val.right.img}
-                  />
+                  {val.right && (
+                    <RightRestaurantImage
+                      heading={val.right.heading}
+                      desc={val.right.desc}
+                      img={val.right.img}
+                      btn={val.right.btn}
+                      descOrder={val.right.descOrder}
+                    />
+                  )}
                 </div>
               </>
             );
           })}
         </div>
-        <Contact />
+        <div className={styles.outletTypeContainer}>
+          <div className={styles.outletType}>
+            <h4>Outlet Types</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing <br /> elit,
+              sed do eiusmod tempor incididunt.
+            </p>
+            <div className={styles.outletCards}>
+              <div className={styles.outletCard}>{/* <h6>My Card</h6> */}</div>
+              <div className={styles.outletCard}>{/* <h6>My Card</h6> */}</div>
+              <div className={styles.outletCard}>{/* <h6>My Card</h6> */}</div>
+              <div className={styles.outletCard}>{/* <h6>My Card</h6> */}</div>
+              <div className={styles.outletCard}>{/* <h6>My Card</h6> */}</div>
+            </div>
+          </div>
+        </div>
       </div>
+        <Contact />
 
       <img className={styles.bottomGradient} src="/Ellipse-137.svg" alt="" />
     </div>
