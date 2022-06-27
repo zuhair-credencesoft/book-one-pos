@@ -32,7 +32,6 @@
 
 .blogText > p {
   font-size: 28px;
-  margin-top: -30px;
   width: 50vh;
 }
 
@@ -49,10 +48,6 @@
 .kitchenSpan {
   font-size: 25px;
   font-weight: 400;
-}
-
-.descUnorder {
-  margin-top: -30px;
 }
 
 .descOrder {
