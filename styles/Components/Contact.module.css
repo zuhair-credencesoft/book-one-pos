@@ -33,7 +33,7 @@
     margin: 6px 10px;
     color: black;
     border: 2px solid #cad7f5;
-    background-color: #e3e8f4;
+    background-color: #f0f0f1;
     border-radius: 10px;
 }
 
@@ -46,7 +46,7 @@
     border: 2px solid #6b90e7;
 }
 .formGroup > input:hover{
-    background-color: #ebeef5;
+    background-color: #dfe6f7;
 }
 
 .btnHolder {
