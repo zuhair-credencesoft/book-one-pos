@@ -4,12 +4,18 @@
   align-items: center;
   height: 100px;
   width: 100%;
-  /* background-color: aqua; */
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding: 50px 0;
+  z-index: 10;
+  box-shadow: 2px 0px 10px 2px rgb(201, 201, 201);
 }
 
 .logo {
   margin-left: 50px;
   margin-top: 11px;
+  width: 70px;
   cursor: pointer;
 }
 
@@ -22,11 +28,32 @@
   gap: 40px;
 }
 
+.unorderList > a {
+  padding: 50px 0;
+}
+
 .orderList {
   list-style: none;
   font-weight: 600;
   font-size: 18px;
   cursor: pointer;
+}
+.orderList > .orderListDropDown {
+  background-color: #fff;
+  list-style: none;
+  position: absolute;
+  top: 100px;
+  border: 1px solid rgb(225, 223, 223);
+  border-radius: 10px;
+}
+.orderList > .orderListDropDown {
+    padding: 10px 0;
+}
+.orderList > .orderListDropDown > li {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 10px;
 }
 
 .downArrow {
@@ -49,9 +76,56 @@
   cursor: pointer;
 }
 
+.menuIcon{
+  display: none;
+  margin-right: 30px;
+  margin: 15px 15px;
+}
+
+.dropDownMenu {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 100px;
+  padding: 10px 0px;
+  background-color: #fff;
+  list-style: none;
+}
+
+.dropDownMenu > li {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.dropDownMenu > ul {
+  padding-left: 20;
+}
+
+.dropDownMenu > li > ul {
+  padding: 0;
+}
+
+.dropDownMenu > ul > li {
+  list-style: none;
+  padding: 10px 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .items{
+    display: none;
+  }
+  .demoButton{
+    display: none;
+  }
+  .menuIcon {
+    display: block;
+  }
 .innerUnorder {
   list-style-type: none;
 }
 .orderList > a {
   text-decoration: none;
+}
 }
