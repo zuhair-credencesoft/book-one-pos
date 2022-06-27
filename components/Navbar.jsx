@@ -11,13 +11,17 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
-        <Image
-          height={100}
-          width={100}
-          layout="intrinsic"
-          src="/Logo_Bookone-Vertical-1.svg"
-          alt="bookone POS Logo"
-        />
+        <Link href={"/"}>
+          <a>
+            <Image
+              height={100}
+              width={100}
+              layout="intrinsic"
+              src="/Logo_Bookone-Vertical-1.svg"
+              alt="bookone POS Logo"
+            />
+          </a>
+        </Link>
       </div>
       <div className={styles.items}>
         <ul className={styles.unorderList}>

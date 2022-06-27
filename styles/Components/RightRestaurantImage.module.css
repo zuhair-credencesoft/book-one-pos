@@ -4,7 +4,6 @@
   align-items: center;
   width: 80%;
   margin: auto;
-  /* height: 60vh; */
   margin-bottom: 10px;
 }
 
@@ -16,8 +15,6 @@
   margin-bottom: 80px;
   max-width: 1500px;
   width: 80%;
-  /* padding: 2px ppx; */
-  /* gap: 600px; */
 }
 
 .nextImage {
@@ -26,13 +23,16 @@
   min-width: 30vh;
 }
 
+.blogText {
+  flex: 1;
+}
+
 .blogText > h3 {
   font-size: 50px;
 }
 
 .blogText > p {
   font-size: 28px;
-  width: 50vh;
 }
 
 .knowButton {

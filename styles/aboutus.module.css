@@ -1,0 +1,69 @@
+.aboutContainer{
+
+}
+
+.secondSection{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 3px 8px 0px rgb(160, 159, 159);
+    margin: 50px 50px;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+
+.secondSection > .leftSection{
+    width: 40%;
+    padding: 0px 50px;
+}
+.secondSection > .leftSection>h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.secondSection > .leftSection> .paragraph{
+    font-weight: 400;
+}
+.secondSection > .leftSection> .paragraph > p {
+    margin: 0 0;
+}
+.secondSection > .rightSection{
+    width: 50%;
+}
+.secondSection > .rightSection > ul {
+    width: 50%;
+    margin: auto;
+}
+.secondSection > .rightSection > ul>li{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0;
+}
+
+.secondSection > .rightSection > ul>li::marker{
+    color: #4C6ED4;
+}
+
+.secondSection > .rightSection > ul>p{
+    margin: 0 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1100px) {
+    .secondSection{
+        flex-direction: column;
+        margin: 50px 10px;
+        padding: 0 0;
+    }
+    .secondSection > .leftSection{
+        width: 100%;
+    }
+    .secondSection > .rightSection{
+        margin: 40px 0;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .secondSection > .rightSection > ul{
+        margin: 0 40px;
+        width: 80%;
+    }
+}

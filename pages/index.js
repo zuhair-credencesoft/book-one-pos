@@ -4,7 +4,6 @@ import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import LeftRestaurantImage from "../components/LeftRestaurantImage";
 import WhyBookOnePos from "../components/WhyBookOnePos";
-import Contact from "../components/Contact";
 
 export default function Home() {
   const [whyBookOnePos, setWhyBookOnePos] = useState({
@@ -312,8 +311,7 @@ export default function Home() {
           </h6>
           {leftRightImgData.map((val, i) => {
             return (
-              <>
-                <div key={i}>
+                <div key={i+2}>
                   <LeftRestaurantImage
                     heading={val.left.heading}
                     desc={val.left.desc}
@@ -329,9 +327,9 @@ export default function Home() {
                       btn={val.right.btn}
                       descOrder={val.right.descOrder}
                     />
-                  )}
-                </div>
-              </>
+                    
+                    )}
+                    </div>
             );
           })}
         </div>
@@ -352,7 +350,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-        <Contact />
 
       <img className={styles.bottomGradient} src="/Ellipse-137.svg" alt="" />
     </div>
