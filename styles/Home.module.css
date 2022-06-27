@@ -211,6 +211,9 @@
     width: 100%;
     justify-content: center;
   }
+  .heroText {
+    margin-left: 0;
+  }
 
   .heroText > .Text1 {
     font-weight: 600;
