@@ -1,3 +1,7 @@
+.container {
+  margin-top: 50px;
+}
+
 .heroContainer {
   display: flex;
   justify-content: space-between;
@@ -13,8 +17,14 @@
   justify-content: center;
 }
 
+.FirstIntegrationImg > img {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
 .integrationImg > img {
-  height: 400px;
+  /* height: 400px; */
   width: 100%;
   max-width: 1000px;
 }
@@ -82,6 +92,7 @@
 
 .signUpContainer > .IntegrationImg > img {
   width: 100%;
+  height: 0px;
 }
 
 /* Why bookone Design */
@@ -96,7 +107,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 800px) {
   .heroContainer {
     flex-direction: column;
     justify-content: flex-start;
@@ -128,6 +139,11 @@
     padding: 20px 0px;
     margin: auto;
   }
+
+  .integrationImg > img {
+    /* margin: 0px 40px; */
+    padding: 0px 50px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -139,4 +155,7 @@
     font-size: 30px;
     text-align: center;
   }
+}
+
+@media (max-width: 1000px) {
 }

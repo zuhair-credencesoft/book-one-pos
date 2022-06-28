@@ -1,6 +1,8 @@
 .container {
   display: flex;
   margin: auto;
+  /* margin: 0px 50px; */
+  width: 90%;
   max-width: 1400px;
   justify-content: space-between;
 }
@@ -20,4 +22,25 @@
 
 .sectionOne > ul > li {
   font-size: 20px;
+}
+
+.sectionTwo > img {
+  /* width: 50%; */
+  /* margin: 60px; */
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+
+    /* align-items: center; */
+  }
+  .sectionOne {
+    width: 100%;
+  }
+
+  .sectionTwo > img {
+    display: block;
+    margin: auto;
+  }
 }
