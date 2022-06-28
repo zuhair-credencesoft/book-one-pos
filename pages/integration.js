@@ -4,10 +4,10 @@ import styles from "../styles/Integration.module.css";
 export default class Integration extends React.Component {
   render() {
     return (
-      <div>
+      <div className={styles.container}>
         <div className={styles.heroContainer}>
           <div className={styles.signUpContainer}>
-            <div className={styles.IntegrationImg}>
+            <div className={styles.FirstIntegrationImg}>
               <img src="/integration.svg" alt="" />
             </div>
           </div>
