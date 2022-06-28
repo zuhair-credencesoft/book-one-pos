@@ -213,7 +213,7 @@ export default function Home() {
             <button className={styles.heroTextButton}>Take a Free demo</button>
           </div>
           <div className={styles.polygon}>
-            <img className={styles.polygonArrow} src="/heroArrow.svg"></img>
+            <img className={styles.polygonArrow} src="/heroArrow.svg" alt=""></img>
           </div>
         </div>
         <div className={styles.signUpContainer}>

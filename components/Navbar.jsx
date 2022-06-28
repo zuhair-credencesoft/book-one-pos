@@ -16,7 +16,6 @@ const Navbar = () => {
   };
   const handleDropDown2 = () => {
     setShowDropdown2(!showDropdown2);
-    // console.log(showDropdown2)
   };
   const handleMenuDropDown = () => {
     setShowMenuDropdown(!showMenuDropdown);
@@ -39,12 +38,13 @@ const Navbar = () => {
       </div>
       <div className={styles.items}>
         <ul className={styles.unorderList}>
-          <a onClick={handleDropDown}>
+          {/* <a onClick={handleDropDown}> */}
+          <a onMouseEnter={handleDropDown} onClick={()=>{setShowDropdown(true)}} onMouseLeave={()=>{setShowDropdown(false)}}>
             <li className={styles.orderList}>
               POS
               <TiArrowSortedDown style={{ paddingTop: "5px" }} size={20} />
               {showDropdown && (
-                <ul className={styles.orderListDropDown}>
+                <ul onMouseEnter={()=>{setShowDropdown(true)}} onMouseLeave={()=>{setShowDropdown(false)}} className={styles.orderListDropDown}>
                   <Link  href={'/pos/inventorymanagement'}><li>Inventory Management</li></Link>
                   <Link href={'/pos/humanResourceManagement'}><li>Human Resource Management</li></Link>
                   <Link href={'/pos/customerManagement'}><li>Customer Management</li></Link>
