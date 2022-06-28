@@ -45,9 +45,10 @@ const Navbar = () => {
               <TiArrowSortedDown style={{ paddingTop: "5px" }} size={20} />
               {showDropdown && (
                 <ul className={styles.orderListDropDown}>
-                  <li>Inventory Management</li>
-                  <li>Human Resource Management</li>
-                  <li>Customer Management</li>
+                  <Link href={'/pos/inventorymanagement'}><li>Inventory Management</li></Link>
+                  <Link href={'/pos/humanResourceManagement'}><li>Human Resource Management</li></Link>
+                  <Link href={'/pos/customerManagement'}><li>Customer Management</li></Link>
+                  <Link href={'/pos/completeOrderManagement'}><li>Complete Order Management</li></Link>
                 </ul>
               )}
             </li>
@@ -81,9 +82,10 @@ const Navbar = () => {
           </li>
           {showDropdown2 ? (
             <ul className={styles.orderListDropDown2}>
-              <li>Inventory Management</li>
-              <li>Human Resource Management</li>
-              <li>Customer Management</li>
+              <Link href={'/pos/inventorymanagement'}><li>Inventory Management</li></Link>
+              <Link href={'/pos/humanResourceManagement'}><li>Human Resource Management</li></Link>
+              <Link href={'/pos/customerManagement'}><li>Customer Management</li></Link>
+              <Link href={'/pos/completeOrderManagement'}><li>Complete Order Management</li></Link>
             </ul>
           ) : (
             ""

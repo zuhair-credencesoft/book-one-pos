@@ -2,40 +2,48 @@ import React from "react";
 import styles from "../../styles/Pos.module.css";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import PosData from "../../posData";
 
 const Slug = () => {
   const router = useRouter();
-  const { pid } = router.query;
+  const { slug } = router.query;
+  let pageData = {};
+    PosData.forEach(element => {
+      if (element[slug]) {
+        pageData = element[slug];
+      }
+    });
 
   return (
     <div className={styles.container}>
       <div className={styles.sectionOne}>
-        <h5>Inventory management</h5>
+        <h5>{pageData.heading}</h5>
         <p>
-          Inventory management, at its very essence, keeps track of all products
-          so you know when it’s time to order/or not order specific products.
+          {pageData.description}
         </p>
-        <ul>
+        {pageData.listItems && <ul>
           <li>
-            Purchase order list : This will allow you to add the suppliers who
-            supply your goods and record information such as address, phone
-            number, and product status.
+            {pageData.listItems.listItem1}
           </li>
           <li>
-            Recipe Management: This assists you in delivering recipe details
-            regarding the type of ingredients used and the quantity utilized. It
-            also displays the type of recipe and the number of persons served.
+            {pageData.listItems.listItem2}
           </li>
-        </ul>
+          {pageData.listItems.listItem3?<li>
+            {pageData.listItems.listItem3}
+          </li>:''}
+          {pageData.listItems.listItem4?<li>
+            {pageData.listItems.listItem4}
+          </li>:''}
+        </ul>}
       </div>
       <div className={styles.sectionTwo}>
-        <Image
-          src="/inventoryTwo.svg"
+        {pageData.image?<Image
+          src={pageData.image}
           alt=""
           height={600}
           width={600}
           layout="intrinsic"
-        />
+        />:''}
       </div>
     </div>
   );
