@@ -86,7 +86,6 @@
 
 .imgSection {
   margin-top: 40px;
-  margin-right: 80px;
   width: 35%;
 }
 .imgSection > img {
@@ -116,7 +115,7 @@
 }
 @media screen and (max-width: 1100px) {
   .firstSection {
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: left;
   }
   .whatYouContainer {
@@ -126,5 +125,12 @@
   .thirdSection {
     flex-direction: column;
     width: 85%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .firstHead {
+    width: 90%;
+    /* margin: 0px 50px; */
   }
 }
