@@ -28,8 +28,18 @@
   gap: 40px;
 }
 
-.unorderList > a {
-  padding: 50px 0;
+.unorderList  li  {
+  padding: 10px 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.unorderList  li:hover {
+  color: #259bbf;
+}
+
+.orderList > .orderListDropDown{
+  color: black;
 }
 
 .orderList {
