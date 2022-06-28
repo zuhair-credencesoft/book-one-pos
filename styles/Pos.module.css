@@ -2,9 +2,10 @@
   display: flex;
   margin: auto;
   /* margin: 0px 50px; */
-  width: 65%;
+  width: 90%;
   max-width: 1400px;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .sectionOne {
@@ -14,7 +15,7 @@
 .sectionOne > h5 {
   font-size: 50px;
   margin: 0px;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 .sectionOne > p {
@@ -33,7 +34,8 @@
   display: block;
   width: 60%;
   margin: auto;
-  margin-top: 100px;
+  min-width: 300px;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 1200px) {
