@@ -10,6 +10,7 @@
   padding: 50px 0;
   z-index: 10;
   box-shadow: 2px 0px 10px 2px rgb(201, 201, 201);
+  user-select: none;
 }
 
 .logo {
@@ -124,6 +125,10 @@
 }
 
 @media screen and (max-width: 800px) {
+  .container {
+    height: 60px;
+    padding: 5px 0;
+  }
   .dropDownMenu{
     display: block;
   }
@@ -141,5 +146,12 @@
 }
 .orderList > a {
   text-decoration: none;
+}
+.logo {
+  margin-left: 10px;
+  width: 40px;
+}
+.dropDownMenu {
+  top: 59px;
 }
 }

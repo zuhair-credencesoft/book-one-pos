@@ -67,9 +67,9 @@ const Navbar = () => {
       <div className={styles.demoButton}>Take a Free demo</div>
       <div className={styles.menuIcon}>
         {showMenuDropdown ? (
-          <ImCross size={30} onClick={handleMenuDropDown} />
+          <ImCross size={20} onClick={handleMenuDropDown} />
         ) : (
-          <GiHamburgerMenu onClick={handleMenuDropDown} size={30} />
+          <GiHamburgerMenu onClick={handleMenuDropDown} size={20} />
         )}
       </div>
       {showMenuDropdown && (

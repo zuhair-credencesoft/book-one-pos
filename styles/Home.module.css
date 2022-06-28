@@ -3,7 +3,6 @@
   justify-content: space-between;
   max-width: 1500px;
   margin: auto;
-  height: 80vh;
   align-items: center;
 }
 
@@ -119,6 +118,7 @@
   width: 80%;
   border-radius: 15px;
   background-color: rgb(221, 221, 221);
+  user-select: none;
 }
 
 .whyUnorderedList {
@@ -213,6 +213,8 @@
   }
   .heroText {
     margin-left: 0;
+    padding: 20px 0;
+    width: 90%;
   }
 
   .heroText > .Text1 {
@@ -248,5 +250,8 @@
   }
   .outletCards {
     flex-wrap: wrap;
+  }
+  .whyHeading {
+    font-size: 30px;
   }
 }

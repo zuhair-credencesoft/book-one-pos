@@ -82,7 +82,11 @@
         width: 100%;
     }
     .formGroup{
+        width: 90%;
         margin: auto;
+    }
+    .rightSection > h1 {
+        font-size: 40px;
     }
 
 }

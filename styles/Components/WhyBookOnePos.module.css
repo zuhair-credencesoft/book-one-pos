@@ -53,7 +53,18 @@
     .whyBookOnePosLeftSection{
         padding: 0;
     }
+    .whyBookOnePosLeftSection > h1 {
+        font-size: 40px;
+    }
     .whyBookOnePosDesc{
         padding: 5px 10px;
+    }
+    .whyBookOnePosDesc > h2 {
+        margin-top: 0px ;
+    }
+    .whyBookOnePosDesc > h3{
+        margin-top: 0;
+        font-size: 18px;
+        padding-left: 15px;
     }
 }
