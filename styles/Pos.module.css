@@ -13,10 +13,13 @@
 
 .sectionOne > h5 {
   font-size: 50px;
+  margin: 0px;
+  margin-top: 100px;
 }
 
 .sectionOne > p {
   font-size: 25px;
+  /* margin-top: -40px; */
   /* width: 500px; */
 }
 
@@ -27,6 +30,10 @@
 .sectionTwo > img {
   /* width: 50%; */
   /* margin: 60px; */
+  display: block;
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -37,10 +44,5 @@
   }
   .sectionOne {
     width: 100%;
-  }
-
-  .sectionTwo > img {
-    display: block;
-    margin: auto;
   }
 }
