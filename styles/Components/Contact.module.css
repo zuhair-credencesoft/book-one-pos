@@ -3,6 +3,9 @@
     font-size: 30px;
     margin-bottom: 50px;
     margin-top: 60px;
+    width: 100%;
+    margin: auto;
+    max-width: 2000px;
 }
 
 .leftSection{    

@@ -9,7 +9,7 @@
 }
 
 .sectionOne {
-  width: 40%;
+  width: 60%;
 }
 
 .sectionOne > h5 {
@@ -29,13 +29,10 @@
 }
 
 .sectionTwo > img {
-  /* width: 50%; */
-  /* margin: 60px; */
   display: block;
-  width: 60%;
+  width: 70%;
   margin: auto;
   min-width: 300px;
-  margin-top: 20px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -47,4 +44,8 @@
   .sectionOne {
     width: 100%;
   }
+  .sectionTwo > img {
+    width: 30%;
+  }
+  
 }

@@ -244,6 +244,11 @@
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .leftSection{
+    width: 65%;
+  }
+}
 @media screen and (max-width: 1000px) {
   .tabContainer {
     /* width: 500px; */
