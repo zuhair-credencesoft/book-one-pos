@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import styles from "../styles/Pricing.module.css";
 
@@ -7,25 +6,18 @@ const Pricing = () => {
     <div className={styles.bigContainer}>
       <div className={styles.container}>
         <div className={styles.firstSection}>
-          <div>
-            <Image
-              src={"/pricing.svg"}
-              alt=""
-              height={360}
-              width={360}
-              layout="intrinsic"
-            />
+          <div className={styles.imgSection}>
+            <img src={"/pricing.svg"} alt="" />
           </div>
           <div className={styles.firstHead}>
             <h3>
               Lorem <span>Ipsum</span>
             </h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              <br /> sed do eiusmod tempor incididunt ut labore et dolore
-              <br /> magna aliqua. Ut enim ad minim veniam, quis nostrud
-              <br /> exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              <br /> consequat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
         </div>
