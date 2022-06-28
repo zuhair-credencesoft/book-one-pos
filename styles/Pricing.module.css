@@ -48,7 +48,7 @@
 }
 
 .whatYouContainer {
-  box-shadow: 0px 0px 15px 5px rgb(212, 211, 211);
+  box-shadow: 0px 3px 8px 0px rgb(160, 159, 159);
   border-radius: 15px;
   display: flex;
   justify-content: space-evenly;
@@ -82,7 +82,7 @@
 }
 
 .basicAndPremiumContainer {
-  box-shadow: 0px 0px 15px 5px rgb(212, 211, 211);
+  box-shadow: 0px 3px 8px 0px rgb(160, 159, 159);
   border-radius: 15px;
   width: 100%;
   height: 600px;
@@ -108,8 +108,10 @@
   }
   .whatYouContainer {
     flex-direction: column;
+    width: 95%;
   }
   .thirdSection {
     flex-direction: column;
+    width: 85%;
   }
 }

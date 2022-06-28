@@ -88,9 +88,15 @@ const Navbar = () => {
           ) : (
             ""
           )}
-          <li>Integrations</li>
-          <li>Pricing</li>
-          <li>About-Us</li>
+          <Link href={"/integration"}>
+            <li>Integrations</li>
+          </Link>
+          <Link href={"/pricing"}>
+            <li>Pricing</li>
+          </Link>
+          <Link href={"/aboutus"}>
+            <li>About-Us</li>
+          </Link>
         </div>
       )}
     </div>
