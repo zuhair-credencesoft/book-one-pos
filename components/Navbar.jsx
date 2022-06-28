@@ -54,13 +54,13 @@ const Navbar = () => {
             </li>
           </a>
           <Link href="/integration">
-            <li className={styles.orderList}>Integrations</li>
+            <li onClick={()=>setShowDropdown(false)} className={styles.orderList}>Integrations</li>
           </Link>
           <Link href={"/pricing"}>
-            <li className={styles.orderList}>Pricing</li>
+            <li onClick={()=>setShowDropdown(false)} className={styles.orderList}>Pricing</li>
           </Link>
           <Link href={"/aboutus"}>
-            <li className={styles.orderList}>About-Us</li>
+            <li onClick={()=>setShowDropdown(false)} className={styles.orderList}>About-Us</li>
           </Link>
         </ul>
       </div>
