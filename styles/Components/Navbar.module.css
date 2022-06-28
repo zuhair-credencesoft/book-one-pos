@@ -83,6 +83,7 @@
 }
 
 .dropDownMenu {
+  display: none;
   position: absolute;
   right: 0;
   left: 0;
@@ -113,6 +114,9 @@
 }
 
 @media screen and (max-width: 800px) {
+  .dropDownMenu{
+    display: block;
+  }
   .items{
     display: none;
   }
