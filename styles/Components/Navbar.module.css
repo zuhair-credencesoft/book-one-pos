@@ -30,7 +30,7 @@
 }
 
 .unorderList  li  {
-  padding: 10px 10px;
+  padding: 50px 10px;
   border-radius: 10px;
   transition: 0.3s;
 }
@@ -58,6 +58,7 @@
   border-radius: 10px;
 }
 .orderList > .orderListDropDown {
+    margin-top: 5px;
     padding: 10px 0;
 }
 .orderList > .orderListDropDown > li {

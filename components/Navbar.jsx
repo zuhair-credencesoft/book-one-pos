@@ -39,7 +39,7 @@ const Navbar = () => {
       <div className={styles.items}>
         <ul className={styles.unorderList}>
           {/* <a onClick={handleDropDown}> */}
-          <a onMouseEnter={handleDropDown} onClick={()=>{setShowDropdown(true)}} onMouseLeave={()=>{setShowDropdown(false)}}>
+          <a onMouseEnter={handleDropDown}  onMouseLeave={()=>{setShowDropdown(false)}}>
             <li className={styles.orderList}>
               POS
               <TiArrowSortedDown style={{ paddingTop: "5px" }} size={20} />
