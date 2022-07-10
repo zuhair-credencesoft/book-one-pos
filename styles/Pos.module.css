@@ -1,8 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+
+.title {
+  text-align: center;
+}
+
+.title > h5 {
+  font-family: Segoe Print;
+  font-size: 70px;
+  margin: 0px;
+  margin-top: 20px;
+}
+
+.lines {
+  display: flex;
+}
+
+.blueLine,
+.yellowLine {
+  display: block;
+  height: 8px;
+  border: none;
+  border-radius: 10px;
+}
+
+.blueLine {
+  margin-right: 2px;
+  width: 200px;
+  background: #5993d9;
+}
+
+.yellowLine {
+  margin-left: 2px;
+  width: 70px;
+  background: #f6f961;
+}
+
+.descriptionHeading {
+  width: 90%;
+  margin: 60px auto;
+  font-family: "Boogaloo";
+  font-size: 35px;
+}
+
 .container {
   display: flex;
   margin: auto;
   /* margin: 0px 50px; */
-  width: 90%;
+  width: 80%;
   max-width: 1400px;
   justify-content: space-between;
   margin-top: 30px;
@@ -10,12 +54,6 @@
 
 .sectionOne {
   width: 60%;
-}
-
-.sectionOne > h5 {
-  font-size: 50px;
-  margin: 0px;
-  margin-top: 20px;
 }
 
 .sectionOne > p {
@@ -30,12 +68,16 @@
 
 .sectionTwo > img {
   display: block;
+  margin-left: auto;
   width: 70%;
-  margin: auto;
   min-width: 300px;
 }
 
 @media screen and (max-width: 1200px) {
+  .title > h5 {
+    font-size: 40px;
+  }
+
   .container {
     flex-direction: column;
 
@@ -47,5 +89,4 @@
   .sectionTwo > img {
     width: 30%;
   }
-  
 }

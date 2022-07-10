@@ -15,39 +15,50 @@ const Slug = () => {
   });
 
   return (
-    <div className={styles.container}>
-      <div className={styles.sectionOne}>
+    <div className={styles.firstSection}>
+      <div className={styles.title}>
         <h5>{pageData.heading}</h5>
-        <p>{pageData.description}</p>
-        {pageData.listItems && (
-          <ul>
-            <li>{pageData.listItems.listItem1}</li>
-            <li>{pageData.listItems.listItem2}</li>
-            {pageData.listItems.listItem3 ? (
-              <li>{pageData.listItems.listItem3}</li>
-            ) : (
-              ""
-            )}
-            {pageData.listItems.listItem4 ? (
-              <li>{pageData.listItems.listItem4}</li>
-            ) : (
-              ""
-            )}
-          </ul>
-        )}
+        <div className={styles.lines}>
+          <hr className={styles.blueLine} />
+          <hr className={styles.yellowLine} />
+        </div>
+        <p className={styles.descriptionHeading}>
+          {pageData.descriptionHeading}
+        </p>
       </div>
-      <div className={styles.sectionTwo}>
-        {pageData.image ? (
-          <img
-            src={pageData.image}
-            alt=""
-            // height={500}
-            // width={500}
-            // layout="intrinsic"
-          />
-        ) : (
-          ""
-        )}
+      <div className={styles.container}>
+        <div className={styles.sectionOne}>
+          <p>{pageData.description}</p>
+          {pageData.listItems && (
+            <ul>
+              <li>{pageData.listItems.listItem1}</li>
+              <li>{pageData.listItems.listItem2}</li>
+              {pageData.listItems.listItem3 ? (
+                <li>{pageData.listItems.listItem3}</li>
+              ) : (
+                ""
+              )}
+              {pageData.listItems.listItem4 ? (
+                <li>{pageData.listItems.listItem4}</li>
+              ) : (
+                ""
+              )}
+            </ul>
+          )}
+        </div>
+        <div className={styles.sectionTwo}>
+          {pageData.image ? (
+            <img
+              src={pageData.image}
+              alt=""
+              // height={500}
+              // width={500}
+              // layout="intrinsic"
+            />
+          ) : (
+            ""
+          )}
+        </div>
       </div>
     </div>
   );

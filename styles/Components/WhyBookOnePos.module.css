@@ -1,67 +1,86 @@
-.whyBookOnePosContainer{
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin: auto;
-    padding: 40px 0;
-    padding-bottom: 80px;
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+
+.whyBookOnePosContainer {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  gap: 10%;
 }
 
-.whyBookOnePosLeftSection > h1{
-    font-size: 60px;
-    color: #259BBF;
-    margin: 0;
+.whyBookOnePosLeftSection {
+  display: flex;
 }
 
-.whyBookOnePosLeftSection{    
-    display: flex;
-    padding: 20px 20px;
+.srNo > h1 {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  font-family: "Baskervville";
+  font-size: 80px;
+  background: #1e1e1e;
+  color: #259bbf;
+  height: 130px;
+  width: 130px;
+  margin: 0;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.whyBookOnePosDesc {
+  background: #c3d8e3;
+  padding: 20px 30px 60px 30px;
+  margin-top: 90px;
+  width: 600px;
 }
 
 .whyBookOnePosDesc > h2 {
-    font-weight: 600;
-    font-size: 25px;
-    padding-left: 16px;
+  font-family: "Boogaloos", cursive;
+  font-weight: 600;
+  font-size: 30px;
+  color: #1d174d;
+  padding-left: 16px;
 }
 .whyBookOnePosDesc > h3 {
-    font-size: 25px;
-    font-weight: 400;
+  font-family: "Baskervville";
+  font-size: 25px;
+  font-weight: 400;
+  color: #675e5e;
+  padding-left: 30px;
 }
-
-.whyBookOnePosDesc{    
-    padding: 10px 30px;
-}
-
 
 .whyBookOnePosRightSection > img {
-    width: 100%;
-    max-width: 300px;
+  padding-top: 100px;
+  width: 100%;
+  max-width: 300px;
 }
 
 @media screen and (max-width: 1000px) {
-    .whyBookOnePosContainer{
-        flex-direction: column;
-    }
-    .whyBookOnePosRightSection > img{
-        width: 60%;
-        display: block;
-        margin: auto;
-    }
-    .whyBookOnePosLeftSection{
-        padding: 0;
-    }
-    .whyBookOnePosLeftSection > h1 {
-        font-size: 40px;
-    }
-    .whyBookOnePosDesc{
-        padding: 5px 10px;
-    }
-    .whyBookOnePosDesc > h2 {
-        margin-top: 0px ;
-    }
-    .whyBookOnePosDesc > h3{
-        margin-top: 0;
-        font-size: 18px;
-        padding-left: 15px;
-    }
+  .whyBookOnePosContainer {
+    flex-direction: column;
+  }
+  .whyBookOnePosRightSection > img {
+    width: 60%;
+    display: block;
+    margin: auto;
+  }
+  .whyBookOnePosLeftSection {
+    padding: 0;
+  }
+  .whyBookOnePosLeftSection > h1 {
+    height: 30px;
+    width: 30px;
+    font-size: 40px;
+  }
+  .whyBookOnePosDesc {
+    padding: 50px 10px;
+  }
+  .whyBookOnePosDesc > h2 {
+    margin-top: 0px;
+  }
+  .whyBookOnePosDesc > h3 {
+    margin-top: 0;
+    font-size: 18px;
+    padding-left: 15px;
+  }
 }

@@ -39,28 +39,62 @@ const Navbar = () => {
       <div className={styles.items}>
         <ul className={styles.unorderList}>
           {/* <a onClick={handleDropDown}> */}
-          <a onMouseEnter={handleDropDown}  onMouseLeave={()=>{setShowDropdown(false)}}>
+          <a
+            onMouseEnter={handleDropDown}
+            onMouseLeave={() => {
+              setShowDropdown(false);
+            }}
+          >
             <li className={styles.orderList}>
               POS
               <TiArrowSortedDown style={{ paddingTop: "5px" }} size={20} />
               {showDropdown && (
-                <ul onMouseEnter={()=>{setShowDropdown(true)}} onMouseLeave={()=>{setShowDropdown(false)}} className={styles.orderListDropDown}>
-                  <Link  href={'/pos/inventorymanagement'}><li>Inventory Management</li></Link>
-                  <Link href={'/pos/humanResourceManagement'}><li>Human Resource Management</li></Link>
-                  <Link href={'/pos/customerManagement'}><li>Customer Management</li></Link>
-                  <Link href={'/pos/completeOrderManagement'}><li>Complete Order Management</li></Link>
+                <ul
+                  onMouseEnter={() => {
+                    setShowDropdown(true);
+                  }}
+                  onMouseLeave={() => {
+                    setShowDropdown(false);
+                  }}
+                  className={styles.orderListDropDown}
+                >
+                  <Link href={"/pos/inventorymanagement"}>
+                    <li>Inventory Management</li>
+                  </Link>
+                  <Link href={"/pos/humanResourceManagement"}>
+                    <li>Human Resource Management</li>
+                  </Link>
+                  <Link href={"/pos/customerManagement"}>
+                    <li>Customer Management</li>
+                  </Link>
+                  {/* <Link href={'/pos/completeOrderManagement'}><li>Complete Order Management</li></Link> */}
                 </ul>
               )}
             </li>
           </a>
           <Link href="/integration">
-            <li onClick={()=>setShowDropdown(false)} className={styles.orderList}>Integrations</li>
+            <li
+              onClick={() => setShowDropdown(false)}
+              className={styles.orderList}
+            >
+              Integrations
+            </li>
           </Link>
           <Link href={"/pricing"}>
-            <li onClick={()=>setShowDropdown(false)} className={styles.orderList}>Pricing</li>
+            <li
+              onClick={() => setShowDropdown(false)}
+              className={styles.orderList}
+            >
+              Pricing
+            </li>
           </Link>
           <Link href={"/aboutus"}>
-            <li onClick={()=>setShowDropdown(false)} className={styles.orderList}>About-Us</li>
+            <li
+              onClick={() => setShowDropdown(false)}
+              className={styles.orderList}
+            >
+              About-Us
+            </li>
           </Link>
         </ul>
       </div>
@@ -82,22 +116,38 @@ const Navbar = () => {
           </li>
           {showDropdown2 ? (
             <ul className={styles.orderListDropDown2}>
-              <Link href={'/pos/inventorymanagement'}><li onClick={()=>setShowMenuDropdown(false)}>Inventory Management</li></Link>
-              <Link href={'/pos/humanResourceManagement'}><li onClick={()=>setShowMenuDropdown(false)}>Human Resource Management</li></Link>
-              <Link href={'/pos/customerManagement'}><li onClick={()=>setShowMenuDropdown(false)}>Customer Management</li></Link>
-              <Link href={'/pos/completeOrderManagement'}><li onClick={()=>setShowMenuDropdown(false)}>Complete Order Management</li></Link>
+              <Link href={"/pos/inventorymanagement"}>
+                <li onClick={() => setShowMenuDropdown(false)}>
+                  Inventory Management
+                </li>
+              </Link>
+              <Link href={"/pos/humanResourceManagement"}>
+                <li onClick={() => setShowMenuDropdown(false)}>
+                  Human Resource Management
+                </li>
+              </Link>
+              <Link href={"/pos/customerManagement"}>
+                <li onClick={() => setShowMenuDropdown(false)}>
+                  Customer Management
+                </li>
+              </Link>
+              {/* <Link href={"/pos/completeOrderManagement"}>
+                <li onClick={() => setShowMenuDropdown(false)}>
+                  Complete Order Management
+                </li>
+              </Link> */}
             </ul>
           ) : (
             ""
           )}
           <Link href={"/integration"}>
-            <li onClick={()=>setShowMenuDropdown(false)}>Integrations</li>
+            <li onClick={() => setShowMenuDropdown(false)}>Integrations</li>
           </Link>
           <Link href={"/pricing"}>
-            <li onClick={()=>setShowMenuDropdown(false)}>Pricing</li>
+            <li onClick={() => setShowMenuDropdown(false)}>Pricing</li>
           </Link>
           <Link href={"/aboutus"}>
-            <li onClick={()=>setShowMenuDropdown(false)}>About-Us</li>
+            <li onClick={() => setShowMenuDropdown(false)}>About-Us</li>
           </Link>
         </div>
       )}

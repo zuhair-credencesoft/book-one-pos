@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
+
+.card {
+  display: inline-block;
+  width: 320px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 40px 20px 20px 20px;
+  margin: 30px 15px;
+}
+
+.image > img {
+  height: 150px;
+}
+
+.title > h1 {
+  color: #259bbf;
+  font-family: Segoe Print;
+  font-size: 1rem;
+}
+
+.line {
+  display: block;
+  border: none;
+  height: 1px;
+  background: white;
+}
+
+.description {
+  height: 110px;
+  font-family: "Baskervville";
+}
+
+.description > p {
+  color: #9f9a9a;
+}
+
+.descUnorder {
+  color: #9f9a9a;
+  text-align: left;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.button > button {
+  font-family: "Baskervville";
+  font-size: 1rem;
+  background: #259bbf;
+  color: white;
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+}
+
+.button > button:hover {
+  background: #2bb0d9;
+  cursor: pointer;
+}

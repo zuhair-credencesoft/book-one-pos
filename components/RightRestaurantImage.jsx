@@ -19,9 +19,9 @@ const RightRestaurantImage = ({ heading, desc, img, btn, descOrder }) => {
         <div className={styles.blogText}>
           <h3>{heading}</h3>
           {desc && <p>{desc}</p>}
-          {descOrder && (
+          {props.descOrder && (
             <ul className={styles.descUnorder}>
-              <li className={styles.descOrder}>Sale Order Management t</li>
+              <li className={styles.descOrder}>Sale Order Management</li>
               <li className={styles.descOrder}>Payment Management</li>
               <li className={styles.descOrder}>Expense Management</li>
               <li className={styles.descOrder}>Invoice Managemen</li>

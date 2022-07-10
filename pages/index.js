@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import LeftRestaurantImage from "../components/LeftRestaurantImage";
 import WhyBookOnePos from "../components/WhyBookOnePos";
+import TrustedCard from "../components/TrustedCard";
 
 export default function Home() {
   const [whyBookOnePos, setWhyBookOnePos] = useState({
@@ -22,43 +23,43 @@ export default function Home() {
   const [integration, setIntegration] = useState(false);
   const [bottom, setBottom] = useState(false);
 
-  const leftRightImgData = [
-    {
-      left: {
-        heading: "Qracle",
-        desc: "A QR scanner that enables guests to order meals from their table without having to call or wait for the waiter to deliver the menu card.",
-        img: "/oracle.jpg",
-        btn: true,
-      },
-      right: {
-        heading: "Cross Platform",
-        desc: "Our POS is capable of giving you insights into what is best for you. Such reports help you make better merchandising and pricing decisions in the future.",
-        img: "/report.png",
-      },
-    },
-    {
-      left: {
-        heading: "KOT",
-        desc: "Reducing the risk due to manual mistakes, KOT saves time plus it greatly helps the management to have real-time reporting of all the orders that are placed at your restaurant.",
-        img: "/kot.png",
-        brackQuote: true,
-      },
-      right: {
-        heading: "Complete Order Management",
-        desc: false,
-        img: "/management.png",
-        btn: true,
-        descOrder: true,
-      },
-    },
-    {
-      left: {
-        heading: "Report Generation",
-        desc: "Our POS is capable of giving you insights into what is best for you. Such reports help you make better merchandising and pricing decisions in the future..",
-        img: "/report.png",
-      },
-    },
-  ];
+  // const leftRightImgData = [
+  //   {
+  //     left: {
+  //       heading: "Qracle",
+  //       desc: "A QR scanner that enables guests to order meals from their table without having to call or wait for the waiter to deliver the menu card.",
+  //       img: "/oracle.jpg",
+  //       btn: true,
+  //     },
+  //     right: {
+  //       heading: "Cross Platform",
+  //       desc: "Our POS is capable of giving you insights into what is best for you. Such reports help you make better merchandising and pricing decisions in the future.",
+  //       img: "/report.png",
+  //     },
+  //   },
+  //   {
+  //     left: {
+  //       heading: "KOT",
+  //       desc: "Reducing the risk due to manual mistakes, KOT saves time plus it greatly helps the management to have real-time reporting of all the orders that are placed at your restaurant.",
+  //       img: "/kot.png",
+  //       brackQuote: true,
+  //     },
+  //     right: {
+  //       heading: "Complete Order Management",
+  //       desc: false,
+  //       img: "/management.png",
+  //       btn: true,
+  //       descOrder: true,
+  //     },
+  //   },
+  //   {
+  //     left: {
+  //       heading: "Report Generation",
+  //       desc: "  .",
+  //       img: "/report.png",
+  //     },
+  //   },
+  // ];
 
   const easyClick = () => {
     setEasy(!easy);
@@ -213,7 +214,11 @@ export default function Home() {
             <button className={styles.heroTextButton}>Take a Free demo</button>
           </div>
           <div className={styles.polygon}>
-            <img className={styles.polygonArrow} src="/heroArrow.svg" alt=""></img>
+            <img
+              className={styles.polygonArrow}
+              src="/heroArrow.svg"
+              alt=""
+            ></img>
           </div>
         </div>
         <div className={styles.signUpContainer}>
@@ -309,29 +314,62 @@ export default function Home() {
           <h6>
             Trusted by <span>500+</span> Restaurants Partners
           </h6>
-          {leftRightImgData.map((val, i) => {
+          {/* {leftRightImgData.map((val, i) => {
             return (
-                <div key={i+2}>
-                  <LeftRestaurantImage
-                    heading={val.left.heading}
-                    desc={val.left.desc}
-                    img={val.left.img}
-                    btn={val.left.btn}
-                    brackQuote={val.left.brackQuote}
+              <div key={i + 2}>
+                <LeftRestaurantImage
+                  heading={val.left.heading}
+                  desc={val.left.desc}
+                  img={val.left.img}
+                  btn={val.left.btn}
+                  brackQuote={val.left.brackQuote}
+                />
+                {val.right && (
+                  <RightRestaurantImage
+                    heading={val.right.heading}
+                    desc={val.right.desc}
+                    img={val.right.img}
+                    btn={val.right.btn}
+                    descOrder={val.right.descOrder}
                   />
-                  {val.right && (
-                    <RightRestaurantImage
-                      heading={val.right.heading}
-                      desc={val.right.desc}
-                      img={val.right.img}
-                      btn={val.right.btn}
-                      descOrder={val.right.descOrder}
-                    />
-                    
-                    )}
-                    </div>
+                )}
+              </div>
             );
-          })}
+          })} */}
+          <div className={styles.cards}>
+            <div className={styles.container}>
+              <TrustedCard
+                image="/oracle.jpg"
+                title="Qracle"
+                desc="true"
+                description="A QR scanner that enables guests to order meals from their table without having to call or wait for the waiter to deliver the menu card."
+              />
+              <TrustedCard
+                image="/report.png"
+                title="Cross Platform"
+                desc="true"
+                description="Our POS is capable of giving you insights into what is best for you. Such reports help you make better merchandising and pricing decisions in the future."
+              />
+              <TrustedCard
+                image="/kot.png"
+                title="KOT"
+                brackQuote="true"
+                desc="true"
+                description="Reducing the risk due to manual mistakes, KOT saves time plus it greatly helps the management to have real-time reporting of all the orders that are placed at your restaurant."
+              />
+              <TrustedCard
+                image="/management.png"
+                title="Complete Order Management"
+                descOrder="true"
+              />
+              <TrustedCard
+                image="/report.png"
+                title="Report Generation"
+                desc="true"
+                description="Our POS is capable of giving you insights into what is best for you. Such reports help you make better merchandising and pricing decisions in the future."
+              />
+            </div>
+          </div>
         </div>
         <div className={styles.outletTypeContainer}>
           <div className={styles.outletType}>

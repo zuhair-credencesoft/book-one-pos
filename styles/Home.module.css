@@ -150,20 +150,29 @@
 
 /* Trusted By Restaurants Design */
 
+.trustedRestContainer {
+  background: #383838;
+  padding-block: 6vh;
+  margin-top: 150px;
+}
+
 .trustedRestContainer > h6 {
   font-size: 50px;
   text-align: center;
+  color: #fff2f2;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .trustedRestContainer > h6 > span {
-  background: -webkit-linear-gradient(
-    0deg,
-    #1d174d 44.71%,
-    #259bbf 73.75%,
-    #e5e5e5 104.67%
-  );
+  background: -webkit-linear-gradient(0deg, #215d89, #259bbf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.cards {
+  max-width: 1400px;
+  margin: auto;
 }
 
 /* Outlet Type Design */
@@ -200,6 +209,16 @@
   width: 180px;
   border-radius: 7px;
   background-color: #eeeeee;
+}
+
+@media screen and (max-width: 1400px) {
+  .leftSection {
+    width: 65%;
+  }
+
+  .cards {
+    max-width: 1050px;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -244,11 +263,12 @@
   }
 }
 
-@media screen and (max-width: 1400px) {
-  .leftSection{
-    width: 65%;
+@media screen and (max-width: 1050px) {
+  .cards {
+    max-width: 700px;
   }
 }
+
 @media screen and (max-width: 1000px) {
   .tabContainer {
     /* width: 500px; */
@@ -272,5 +292,11 @@
   }
   .whyHeading {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cards {
+    max-width: min-content;
   }
 }

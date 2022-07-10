@@ -31,7 +31,7 @@ export default class Integration extends React.Component {
             </div>
           </div>
         </div>
-        <div>
+        {/* <div>
           <h3 className={styles.onlineHeading}>Online Order Integrations</h3>
         </div>
         <div className={styles.onlineContainer}>
@@ -45,6 +45,11 @@ export default class Integration extends React.Component {
         <div className={styles.onlineContainer}>
           <div className={styles.integrationImg}>
             <img src="/googlepay.svg" alt="" />
+          </div>
+        </div> */}
+        <div className={styles.onlineContainer}>
+          <div className={styles.integrationImg}>
+            <img src="/ZomatoSwiggy.png" alt="" />
           </div>
         </div>
       </div>

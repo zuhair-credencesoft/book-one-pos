@@ -13,17 +13,17 @@ function AboutUs() {
       />
       <div className={styles.secondSection}>
         <div className={styles.leftSection}>
-          <h2>Any Question or Queries?</h2>
-          <div className={styles.paragraph}>
-            <p>
-              Any questions or queries? Please do not hesitate to contact us.
-            </p>
-            <p>
-              Whether you need emergency system down assistance or ongoing
-              retail support, our team will ensure you get the right help, from
-              the right person and when you need it.
-            </p>
-            <p>We always look forward to answering your questions.</p>
+          <div className={styles.leftSectionContent}>
+            <h2>Any Question or Queries?</h2>
+            <div className={styles.paragraph}>
+              <p>
+                Any questions or queries? Please do not hesitate to contact us.
+                Whether you need emergency system down assistance or ongoing
+                retail support, our team will ensure you get the right help,
+                from the right person and when you need it. We always look
+                forward to answering your questions.
+              </p>
+            </div>
           </div>
         </div>
         <div className={styles.rightSection}>
