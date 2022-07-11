@@ -293,7 +293,7 @@
 @media screen and (max-width: 1033px) {
   .tabContainer {
     /* width: 500px; */
-    max-width: 90%;
+    max-width: 100%;
     overflow: auto;
     white-space: nowrap;
     /* padding: 0 10px; */
