@@ -6,6 +6,8 @@ import LeftRestaurantImage from "../components/LeftRestaurantImage";
 import WhyBookOnePos from "../components/WhyBookOnePos";
 import TrustedCard from "../components/TrustedCard";
 
+import { AiOutlineDown } from "react-icons/ai";
+
 export default function Home() {
   const [whyBookOnePos, setWhyBookOnePos] = useState({
     number: "01",
@@ -337,38 +339,41 @@ export default function Home() {
             );
           })} */}
           <div className={styles.cards}>
-            <div className={styles.container}>
-              <TrustedCard
-                image="/oracle.jpg"
-                title="Qracle"
-                desc="true"
-                description="A QR scanner that enables guests to order meals from their table without having to call or wait for the waiter to deliver the menu card."
-              />
-              <TrustedCard
-                image="/report.png"
-                title="Cross Platform"
-                desc="true"
-                description="Our POS is capable of giving you insights into what is best for you. Such reports help you make better merchandising and pricing decisions in the future."
-              />
-              <TrustedCard
-                image="/kot.png"
-                title="KOT"
-                brackQuote="true"
-                desc="true"
-                description="Reducing the risk due to manual mistakes, KOT saves time plus it greatly helps the management to have real-time reporting of all the orders that are placed at your restaurant."
-              />
-              <TrustedCard
-                image="/management.png"
-                title="Complete Order Management"
-                descOrder="true"
-              />
-              <TrustedCard
-                image="/report.png"
-                title="Report Generation"
-                desc="true"
-                description="Our POS is capable of giving you insights into what is best for you. Such reports help you make better merchandising and pricing decisions in the future."
-              />
-            </div>
+            <TrustedCard
+              image="/oracle.jpg"
+              title="Qracle"
+              desc="true"
+              description="A QR scanner that enables guests to order meals from their table without having to call or wait for the waiter to deliver the menu card."
+            />
+            <TrustedCard
+              image="/report.png"
+              title="Cross Platform"
+              desc="true"
+              description="Our POS is capable of giving you insights into what is best for you. Such reports help you make better merchandising and pricing decisions in the future."
+            />
+            <TrustedCard
+              image="/kot.png"
+              title="KOT"
+              brackQuote="true"
+              desc="true"
+              description="Reducing the risk due to manual mistakes, KOT saves time plus it greatly helps the management to have real-time reporting of all the orders that are placed at your restaurant."
+            />
+            <TrustedCard
+              image="/management.png"
+              title="Complete Order Management"
+              descOrder="true"
+            />
+            <TrustedCard
+              image="/report.png"
+              title="Report Generation"
+              desc="true"
+              description="Our POS is capable of giving you insights into what is best for you. Such reports help you make better merchandising and pricing decisions in the future."
+            />
+          </div>
+          <div className={styles.showMore}>
+            <button>
+              Show More <AiOutlineDown style={{ paddingTop: "5px" }} />
+            </button>
           </div>
         </div>
         <div className={styles.outletTypeContainer}>

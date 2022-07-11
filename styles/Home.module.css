@@ -175,6 +175,27 @@
   margin: auto;
 }
 
+.showMore {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.showMore > button {
+  font-family: "Baskervville";
+  font-size: 1rem;
+  background: #259bbf;
+  color: white;
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+}
+
+.showMore > button:hover {
+  background: #2bb0d9;
+  cursor: pointer;
+}
+
 /* Outlet Type Design */
 
 .outletTypeContainer {
@@ -269,10 +290,10 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1033px) {
   .tabContainer {
     /* width: 500px; */
-    max-width: 60%;
+    max-width: 90%;
     overflow: auto;
     white-space: nowrap;
     /* padding: 0 10px; */

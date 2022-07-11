@@ -60,3 +60,9 @@
   background: #2bb0d9;
   cursor: pointer;
 }
+
+@media screen and (max-width: 700px) {
+  .description {
+    height: fit-content;
+  }
+}
