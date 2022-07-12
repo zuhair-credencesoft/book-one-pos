@@ -5,10 +5,10 @@
 }
 
 .title > h5 {
-  font-family: Segoe Print;
+  font-family: "Boogaloo";
   font-size: 70px;
   margin: 0px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .lines {
@@ -36,7 +36,7 @@
 }
 
 .descriptionHeading {
-  width: 90%;
+  width: 75%;
   margin: 60px auto;
   font-family: "Boogaloo";
   font-size: 35px;
@@ -46,18 +46,22 @@
   display: flex;
   margin: auto;
   /* margin: 0px 50px; */
-  width: 80%;
+  width: 70%;
   max-width: 1400px;
   justify-content: space-between;
   margin-top: 30px;
+  font-family: "Baskerville";
 }
 
 .sectionOne {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 60%;
 }
 
 .sectionOne > p {
-  font-size: 25px;
+  font-size: 35px;
   /* margin-top: -40px; */
   /* width: 500px; */
 }
@@ -80,13 +84,21 @@
 
   .container {
     flex-direction: column;
+    width: 90%;
 
     /* align-items: center; */
   }
   .sectionOne {
     width: 100%;
   }
+
+  .sectionOne > p {
+    font-size: 25px;
+  }
+
   .sectionTwo > img {
     width: 30%;
+    margin: auto;
+    margin-block: 30px;
   }
 }

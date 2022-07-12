@@ -3,32 +3,33 @@
   font-size: 30px;
   width: 100%;
   margin: auto;
-  max-width: 2000px;
-  margin-top: 100px;
-  margin-bottom: 50px;
 }
 
 .leftSection {
-  width: 50%;
+  width: 55%;
+  text-align: right;
 }
 
 .leftSection > img {
-  width: 80%;
-  padding-top: 100px;
+  width: 800px;
 }
 
 .rightSection {
-  width: 50%;
+  width: 45%;
+  margin-top: 70px;
+}
+
+.rightSection > h1 {
+  font-family: "Boogaloo";
+  font-weight: 500;
+  margin: 0;
 }
 
 .formGroup {
   display: flex;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.881);
-  padding: 20px 20px;
   width: 80%;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px 0px rgb(168, 167, 167);
 }
 
 .formGroup > input {
@@ -36,8 +37,7 @@
   padding: 18px 15px;
   margin: 6px 10px;
   color: black;
-  border: 2px solid #cad7f5;
-  background-color: #f0f0f1;
+  border: 2px solid #259bbf;
   border-radius: 10px;
 }
 
@@ -48,15 +48,16 @@
 
 .formGroup > input:focus {
   outline: none;
-  border: 2px solid #6b90e7;
+  border: 3px solid #407bff;
+  margin: 5px 8px;
 }
 .formGroup > input:hover {
-  background-color: #dfe6f7;
+  border: 3px solid #407bff;
+  margin: 5px 8px;
 }
 
 .btnHolder {
   display: flex;
-  justify-content: flex-end;
   padding: 20px 10px;
 }
 
@@ -74,13 +75,22 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
   .contactContainer {
     flex-direction: column;
   }
+  /* .leftSection {
+    margin: auto;
+    width: fit-content;
+  } */
   .leftSection {
     display: none;
   }
+
+  .leftSection > img {
+    width: 500px;
+  }
+
   .rightSection {
     text-align: center;
     width: 100%;
@@ -93,3 +103,9 @@
     font-size: 40px;
   }
 }
+
+/* @media screen and (max-width: 800px) {
+  .leftSection {
+    display: none;
+  }
+} */

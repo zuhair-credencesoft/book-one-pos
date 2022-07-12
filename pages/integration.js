@@ -47,9 +47,19 @@ export default class Integration extends React.Component {
             <img src="/googlepay.svg" alt="" />
           </div>
         </div> */}
-        <div className={styles.onlineContainer}>
-          <div className={styles.integrationImg}>
-            <img src="/ZomatoSwiggy.png" alt="" />
+
+        <div className={styles.integration}>
+          <div className={styles.leftSection1}>
+            <div className={styles.heading}>
+              <h1>
+                <span>Payment & </span>
+                <br />
+                Online Order Integration
+              </h1>
+            </div>
+          </div>
+          <div className={styles.rightSection}>
+            <div className={styles.contents}></div>
           </div>
         </div>
       </div>

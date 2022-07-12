@@ -369,6 +369,24 @@ export default function Home() {
               desc="true"
               description="Our POS is capable of giving you insights into what is best for you. Such reports help you make better merchandising and pricing decisions in the future."
             />
+            <TrustedCard
+              image="/kot.png"
+              title="KOT"
+              brackQuote="true"
+              desc="true"
+              description="Reducing the risk due to manual mistakes, KOT saves time plus it greatly helps the management to have real-time reporting of all the orders that are placed at your restaurant."
+            />
+            <TrustedCard
+              image="/management.png"
+              title="Complete Order Management"
+              descOrder="true"
+            />
+            <TrustedCard
+              image="/report.png"
+              title="Report Generation"
+              desc="true"
+              description="Our POS is capable of giving you insights into what is best for you. Such reports help you make better merchandising and pricing decisions in the future."
+            />
           </div>
           <div className={styles.showMore}>
             <button>

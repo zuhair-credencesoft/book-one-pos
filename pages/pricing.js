@@ -26,44 +26,73 @@ const Pricing = () => {
           <div className={styles.whatYouContainer}>
             <div className={styles.firstWhatGet}>
               <ul>
-                <li>365 days service</li>
-                <p>
-                  Our customer service team are always
-                  <br /> available to help you 24x7.
-                </p>
-                <li>Cloud based</li>
-                <p>
-                  Access the software from anywhere and
-                  <br /> anytime via a web browser.
-                </p>
-                <li>Accessible on iOS and Android</li>
-                <p>
-                  Available on both operating systems
-                  <br /> Google Play Store and Apple App Store
-                </p>
+                <div className={styles.part}>
+                  <div className={styles.circle}></div>
+                  <div className={styles.content}>
+                    <h1>365 days service</h1>
+                    <p>
+                      Our customer service team are always available to help you
+                      24x7.
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.part}>
+                  <div className={styles.circle}></div>
+                  <div className={styles.content}>
+                    <h1>Cloud based</h1>
+                    <p>
+                      Access the software from anywhere and anytime via a web
+                      browser.
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.part}>
+                  <div className={styles.circle}></div>
+                  <div className={styles.content}>
+                    <h1>Accessible on iOS and Android</h1>
+                    <p>
+                      Available on both operating systems Google Play Store and
+                      Apple App Store
+                    </p>
+                  </div>
+                </div>
               </ul>
             </div>
             <div className={styles.firstWhatGet}>
               <ul>
-                <li>One login for numerous users</li>
-                <p>
-                  No need of creating multiple accounts, use
-                  <br /> one login for more than one business
-                </p>
-                <li>Examine daily reports.</li>
-                <p>
-                  See your daily revenue, expenses,
-                  <br /> orders in just few clicks.
-                </p>
-                <li>
-                  Hotels and Restaurants can be
-                  <br /> managed using the same software.
-                </li>
-                <p>
-                  No need to use different software for your hotels.
-                  <br /> BookonePOS can manage multiple services in one
-                  platform.
-                </p>
+                <div className={styles.part}>
+                  <div className={styles.circle}></div>
+                  <div className={styles.content}>
+                    <h1>One login for numerous users</h1>
+                    <p>
+                      No need of creating multiple accounts, use one login for
+                      more than one business
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.part}>
+                  <div className={styles.circle}></div>
+                  <div className={styles.content}>
+                    <h1>Examine daily reports.</h1>
+                    <p>
+                      See your daily revenue, expenses, orders in just few
+                      clicks.
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.part}>
+                  <div className={styles.circle}></div>
+                  <div className={styles.content}>
+                    <h1>
+                      Hotels and Restaurants can be managed using the same
+                      software.
+                    </h1>
+                    <p>
+                      No need to use different software for your hotels.
+                      BookonePOS can manage multiple services in one platform.
+                    </p>
+                  </div>
+                </div>
               </ul>
             </div>
           </div>

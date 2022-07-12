@@ -22,13 +22,15 @@ const Slug = () => {
           <hr className={styles.blueLine} />
           <hr className={styles.yellowLine} />
         </div>
-        <p className={styles.descriptionHeading}>
-          {pageData.descriptionHeading}
-        </p>
+        {pageData.descriptionHeading && (
+          <p className={styles.descriptionHeading}>
+            {pageData.descriptionHeading}
+          </p>
+        )}
       </div>
       <div className={styles.container}>
         <div className={styles.sectionOne}>
-          <p>{pageData.description}</p>
+          {pageData.description && <p>{pageData.description}</p>}
           {pageData.listItems && (
             <ul>
               <li>{pageData.listItems.listItem1}</li>
@@ -47,17 +49,7 @@ const Slug = () => {
           )}
         </div>
         <div className={styles.sectionTwo}>
-          {pageData.image ? (
-            <img
-              src={pageData.image}
-              alt=""
-              // height={500}
-              // width={500}
-              // layout="intrinsic"
-            />
-          ) : (
-            ""
-          )}
+          {pageData.image ? <img src={pageData.image} alt="" /> : ""}
         </div>
       </div>
     </div>

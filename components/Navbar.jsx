@@ -98,7 +98,9 @@ const Navbar = () => {
           </Link>
         </ul>
       </div>
-      <div className={styles.demoButton}>Take a Free demo</div>
+      <Link href="/contact">
+        <div className={styles.demoButton}>Take a Free demo</div>
+      </Link>
       <div className={styles.menuIcon}>
         {showMenuDropdown ? (
           <ImCross size={20} onClick={handleMenuDropDown} />
