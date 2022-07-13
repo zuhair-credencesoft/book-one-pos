@@ -168,6 +168,53 @@
   width: 100%;
   left: 8vw;
   transform: skew(-50deg);
+  display: flex;
+  padding: 1vw 1vw 0 0;
+}
+
+.row {
+  width: 50%;
+}
+
+.content {
+  padding: 10px;
+  height: 5vw;
+}
+
+.content > img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.mobileIntegration {
+  display: none;
+}
+
+.mobileIntegration > h4 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.integrationCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.integrationCard {
+  margin-inline: auto;
+  margin-bottom: 50px;
+  height: 180px;
+  width: 180px;
+  border-radius: 7px;
+  background-color: #eeeeee;
+}
+
+.integrationCard > img {
+  cursor: pointer;
+  width: 100%;
 }
 
 @media screen and (max-width: 900px) {
@@ -215,6 +262,16 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .integration {
+    display: none;
+  }
+
+  .mobileIntegration {
+    display: block;
+  }
+}
+
 @media (max-width: 1000px) {
   .paytmHeading {
     font-size: 30px;
@@ -224,7 +281,4 @@
     font-size: 30px;
     text-align: center;
   }
-}
-
-@media (max-width: 1000px) {
 }

@@ -59,7 +59,51 @@ export default class Integration extends React.Component {
             </div>
           </div>
           <div className={styles.rightSection}>
-            <div className={styles.contents}></div>
+            <div className={styles.contents}>
+              <div className={styles.row}>
+                <div className={styles.content}>
+                  <Link href="/">
+                    <img src="/Zomato_Logo 1.png" alt="" />
+                  </Link>
+                </div>
+                <div className={styles.content}>
+                  <Link href="/">
+                    <img src="/images 1.png" alt="" />
+                  </Link>
+                </div>
+              </div>
+              <div className={styles.row}>
+                <div className={styles.content}>
+                  <Link href="/">
+                    <img src="/Swiggy_Logo 1.png" alt="" />
+                  </Link>
+                </div>
+                <div className={styles.content}>
+                  <Link href="/">
+                    <img src="/Payment Icons.png" alt="" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.mobileIntegration}>
+          <h4>Payment & Online Order Integration</h4>
+          <div className={styles.integrationCards}>
+            <div className={styles.integrationCard}>
+              <Link href="/">
+                <img src="/Zomato_Logo_Mobile.png" alt="" />
+              </Link>
+            </div>
+            <div className={styles.integrationCard}>
+              {/* <h6>My Card</h6> */}
+            </div>
+            <div className={styles.integrationCard}>
+              {/* <h6>My Card</h6> */}
+            </div>
+            <div className={styles.integrationCard}>
+              {/* <h6>My Card</h6> */}
+            </div>
           </div>
         </div>
       </div>

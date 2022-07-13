@@ -113,6 +113,10 @@
     left: -40px;
   }
 
+  .whyBookOnePosDesc > h2 {
+    font-size: 25px;
+  }
+
   .srNo {
     left: 50%;
   }

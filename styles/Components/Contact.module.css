@@ -94,6 +94,8 @@
   .rightSection {
     text-align: center;
     width: 100%;
+    max-width: 600px;
+    margin: 70px auto;
   }
   .formGroup {
     width: 90%;
