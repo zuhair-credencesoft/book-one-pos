@@ -191,16 +191,21 @@
 }
 
 .mobileIntegration > h4 {
+  font-family: "boogaloo";
   text-align: center;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: bold;
   margin-top: 0;
+  width: 90%;
+  margin-inline: auto;
 }
 
 .integrationCards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
 }
 
 .integrationCard {
