@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/Components/Contact.module.css";
 import { useState } from "react";
 
-function contact() {
+function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");

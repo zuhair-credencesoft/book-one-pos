@@ -29,17 +29,17 @@
   gap: 40px;
 }
 
-.unorderList  li  {
+.unorderList li {
   padding: 50px 10px;
   border-radius: 10px;
   transition: 0.3s;
 }
 
-.unorderList  li:hover {
+.unorderList li:hover {
   color: #259bbf;
 }
 
-.orderList > .orderListDropDown{
+.orderList > .orderListDropDown {
   color: black;
 }
 
@@ -58,8 +58,8 @@
   border-radius: 10px;
 }
 .orderList > .orderListDropDown {
-    margin-top: 5px;
-    padding: 10px 0;
+  margin-top: 5px;
+  padding: 10px 0;
 }
 .orderList > .orderListDropDown > li {
   text-align: left;
@@ -94,7 +94,7 @@
   color: white;
 }
 
-.menuIcon{
+.menuIcon {
   display: none;
   margin-right: 30px;
   margin: 15px 15px;
@@ -126,7 +126,7 @@
   padding: 0;
 }
 
-.dropDownMenu > ul >li {
+.dropDownMenu > ul > li {
   list-style: none;
   padding: 10px 30px;
 }
@@ -136,29 +136,29 @@
     height: 60px;
     padding: 5px 0;
   }
-  .dropDownMenu{
+  .dropDownMenu {
     display: block;
   }
-  .items{
+  .items {
     display: none;
   }
-  .demoButton{
+  .demoButton {
     display: none;
   }
   .menuIcon {
     display: block;
   }
-.innerUnorder {
-  list-style-type: none;
-}
-.orderList > a {
-  text-decoration: none;
-}
-.logo {
-  margin-left: 10px;
-  width: 40px;
-}
-.dropDownMenu {
-  top: 59px;
-}
+  .innerUnorder {
+    list-style-type: none;
+  }
+  .orderList > a {
+    text-decoration: none;
+  }
+  .logo {
+    margin-left: 10px;
+    width: 40px;
+  }
+  .dropDownMenu {
+    top: 59px;
+  }
 }
