@@ -7,6 +7,8 @@
 .leftSection {
   width: 40%;
   max-width: 800px;
+  display: grid;
+  vertical-align: middle;
 }
 
 .leftSection > img {
@@ -51,12 +53,15 @@
 
   .leftSection {
     width: 100%;
+    max-width: none;
   }
   .leftSection > img {
     width: 50%;
   }
   .rightSection {
     width: 100%;
+    max-width: none;
     text-align: left;
+    padding: 0 15px;
   }
 }

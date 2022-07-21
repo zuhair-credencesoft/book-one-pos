@@ -22,7 +22,6 @@
 
 .leftSectionContent {
   position: relative;
-  top: 10%;
 }
 
 .leftSectionContent > h2 {
@@ -44,12 +43,12 @@
   width: 50%;
 }
 
-.secondSection > .rightSection > ul {
+.secondSection > .rightSection > div {
   width: 80%;
   margin: auto;
 }
 
-.secondSection > .rightSection > ul > li {
+/* .secondSection > .rightSection > div > li {
   font-size: 30px;
   font-weight: 600;
   margin: 0 0;
@@ -57,11 +56,11 @@
 
 .secondSection > .rightSection > ul > li::marker {
   color: #4c6ed4;
-}
+} */
 
-.secondSection > .rightSection > ul > p {
+.secondSection > .rightSection > div > p {
   margin: 0 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-weight: 400;
 }
 
@@ -75,6 +74,10 @@
     width: 100%;
     padding-bottom: 50px;
   }
+  .leftSectionContent > h2 {
+    font-size: 30px;
+  }
+
   .secondSection > .rightSection {
     margin: 40px 0;
     width: 100%;
@@ -83,5 +86,15 @@
   .secondSection > .rightSection > ul {
     margin: 0 40px;
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .secondSection > .leftSection {
+    padding-inline: 10px;
+  }
+  .leftSectionContent > .paragraph {
+    text-align: left;
+    font-size: 15px;
   }
 }
